@@ -1,0 +1,240 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    box-sizing: border-box;
+}
+
+header
+{
+    display: grid;
+    height: 90vh;
+    width: 1440px;
+    grid-template-columns: repeat(150px , 6) ;
+    grid-template-rows: 35vh 40vh;
+    background-color: hsl(0, 0%, 100%);
+    align-content: space-between;
+    justify-content: space-between;
+    margin-left: calc(50% - 720px);
+    margin-top: 50px;
+    padding: 50px;   
+}
+
+
+section:nth-child(1)
+{
+    grid-area: 1/1/1 span/ 3 span;
+    width: 400px ;
+}
+section:nth-child(2)
+{
+    grid-area: 1/4/1 span/ 3 span;
+}
+section:nth-child(3)
+{
+    grid-area: 2/1/1 span/ 2 span; 
+}
+section:nth-child(4)
+{
+    grid-area: 2/3/1 span/ 2 span;
+    position: relative;
+    top: 20px;
+}
+section:nth-child(5)
+{
+    grid-area: 2/5/1 span/ 2 span;
+    position: relative;
+    top: 40px;
+}
+section:nth-child(3),section:nth-child(4),section:nth-child(5)
+{
+    background-color:hsl(300, 43%, 22%);
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    color:  hsl(0, 0%, 100%);
+    font-weight: 100;
+    font-family: 'Lexend Deca', sans-serif;  
+}
+section:nth-child(3)> p,section:nth-child(4)> p,section:nth-child(5) > p
+{
+    margin: 50px;
+}
+section:nth-child(1) p
+{
+    width: 450px;
+}
+section h3:nth-child(3)
+{
+    color:hsl(333, 80%, 67%) ;
+    position: relative;
+    display: inline-block;
+    margin-left: 100px;
+    left: 25px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+h3:nth-child(2)
+{
+display: inline-block;
+position: relative;
+left: 20px;
+font-weight: lighter;
+}
+
+.font-color
+{
+    color:hsl(300, 24%, 96%) ;
+}
+p
+{
+    font-size: 15px;
+    color: hsl(303, 10%, 53%);
+    line-height: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.img
+{ 
+    position: relative;
+    border-radius: 50%;
+    width: 70px;
+    top: 40px;
+    left: 0px;
+    margin-left: 30px;
+}
+
+div img
+{
+    margin-left:10px;
+}
+div head,div p
+{
+    display: inline-block;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    font-weight: bolder;
+}
+
+div{
+    display: block;
+    background-color: hsl(300, 24%, 96%);
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 420px;
+    line-height: 50px;
+    text-align: center;
+}
+div:nth-child(2)
+{
+margin-left: 50px;
+}
+div:nth-child(3)
+{
+margin-left: 100px;
+}
+h1,div
+{
+    color: hsl(300, 43%, 22%);
+}
+h1
+{
+    font-size: 40px;
+}
+
+// mobile
+@media(max-width: 376px) and (min-width: 100px)
+{
+    header
+{
+    display: grid;
+    width: 374px;
+    grid-template-columns: 360px ;
+    grid-template-rows: 300px 320px 300px 300px 300px;
+    background-color: hsl(0, 0%, 100%);
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    margin-top: 0; 
+}
+
+div 
+{
+    display: inline-block;
+}
+div img
+{
+    margin-left:2px;  
+}
+section,div,h1
+{
+    width: 340px;
+    margin: 0;
+}
+div > p
+{
+    display: block;
+    padding: 0; 
+}
+div:nth-child(1)
+{
+margin-left: 0;
+}
+div:nth-child(2)
+{
+margin-left: 0;
+}
+div:nth-child(3)
+{
+margin-left: 0;
+}
+section:nth-child(1) p 
+{
+    padding: 20px;
+    margin: 0px;
+    width: 340px;
+}
+section:nth-child(1)
+{
+    grid-area: 1/1/1 span/ 1 span;
+    text-align: center;
+}
+section:nth-child(2)
+{
+    grid-area: 2/1/1 span/ 1 span;
+}
+section:nth-child(3)
+{
+    grid-area: 3/1/1 span/ 2 span;
+    width: 360px;
+    height: 300px;
+}
+section:nth-child(4)
+{
+    grid-area: 4/1/1 span/ 1 span;
+    position: relative;
+    top: 20px;
+    width: 360px;
+    height: 300px;
+}
+section:nth-child(5)
+{
+    grid-area: 5/1/1 span/ 1 span;
+    position: relative;
+    top: 40px;
+    width: 360px;
+    height: 300px;
+}
+section p
+{ 
+    padding: 0px;
+    margin: 0;
+}
+
+}
